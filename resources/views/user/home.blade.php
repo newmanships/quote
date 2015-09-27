@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello</title>
+        <title>Welcome back</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -38,14 +38,11 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Hello</div>
+                <div class="title">Welcome back <?php echo $name ?></div>
                 <div>
-	                <h3>Login</h3>
-	                @include('auth.login')
-                </div>
-                <div>
-	                <h3>Register</h3>
-	                @include('auth.register')
+	                <form method="GET" action="/auth/logout">
+						<button name="Logout" title="Logout">Logout</button>
+	                </form>
                 </div>
             </div>
         </div>
