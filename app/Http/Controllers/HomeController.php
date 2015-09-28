@@ -18,7 +18,9 @@ class HomeController extends Controller
     {
 	    if (Auth::check()) {
 		    $user = Auth::user();
-		    return view('user.home')->with('name', $user->name);
+// 		    $quote = file_get_contents($url);
+		    $quote = json_decode(file_get_contents('http://api.icndb.com/jokes/random'), true);
+		    return view('user.home', ['name' => $user->name, 'quote' => $quote]);
 	    }
         else {
 	        return view('welcome');

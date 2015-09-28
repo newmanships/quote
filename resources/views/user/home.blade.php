@@ -41,9 +41,13 @@
                 <div class="title">Welcome back <?php echo $name ?></div>
                 <div>
 	                <form method="GET" action="/auth/logout">
-						<button name="Logout" title="Logout">Logout</button>
+						<button name="Logout" title="Logout" class="btn btn-default">Logout</button>
 	                </form>
                 </div>
+                <?php if ($quote['value']['joke']) { ?>
+	                <blockquote> <?php print_r($quote['value']['joke']); ?></blockquote>
+                <?php } ?>
+               
             </div>
         </div>
     </body>

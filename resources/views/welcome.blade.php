@@ -4,7 +4,7 @@
         <title>Hello</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
         <style>
             html, body {
                 height: 100%;
@@ -39,13 +39,17 @@
         <div class="container">
             <div class="content">
                 <div class="title">Hello</div>
-                <div>
-	                <h3>Login</h3>
-	                @include('auth.login')
-                </div>
-                <div>
-	                <h3>Register</h3>
-	                @include('auth.register')
+                <div class="container">
+	                <div class="row">
+		                <div class="col-xs-12 col-sm-6">
+			                <h3>Login</h3>
+			                @include('auth.login')
+		                </div>
+		                <div class="col-xs-12 col-sm-6">
+			                <h3>Register</h3>
+			                @include('auth.register')
+		                </div>
+	                </div>
                 </div>
             </div>
         </div>
