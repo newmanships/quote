@@ -4,6 +4,8 @@
         <title>Welcome back</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{!! URL::asset('css/style.css') !!}">
+		<script type="text/javascript" href="{!! URL::asset('all.js') !!}" ></script>
 
         <style>
             html, body {
